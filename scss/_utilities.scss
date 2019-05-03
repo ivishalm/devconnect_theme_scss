@@ -33,6 +33,19 @@
     color: $primary-color;
 }
 
+// round image
+.round-img {
+    border-radius: 50%;
+}
+
+// line
+.line {
+    height: 1px;
+    background: #ccc;
+    margin: 1.5rem 0;
+}
+
+
 // backgrounds
 
 .bg {
@@ -125,6 +138,33 @@
     &.alert-danger {
         @include set-background-color($danger-color);
     }
+}
+
+
+// Badges
+
+.badge {
+    font: .8rem;
+    padding: .1rem;
+    margin: .4rem;
+    background: $light-color;
+    text-align: center;
+
+    &.badge-primary {
+        @include set-background-color($primary-color);
+    }
+
+    &.badge-dark {
+        @include set-background-color($dark-color);
+    }
+
+    &.badge-success {
+        @include set-background-color($success-color);
+    }
+    &.badge-danger {
+        @include set-background-color($danger-color);
+    }
+
 }
 
 
